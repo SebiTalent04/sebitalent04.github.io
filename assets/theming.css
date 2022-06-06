@@ -1,0 +1,91 @@
+/* purgecss start ignore */
+:root {
+    /* dark vars */
+    --dark-bg: #1f2534;
+    --dark-heading: #e5e9f0;
+    --dark-text: #d8dee9;
+    --dark-scrollbar-thumb: #2e3647;
+    --dark-scrollbar-track: #474f61;
+    --dark-border: #eceff4;
+    /* gradient */
+    --gradient: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
+    user-select: none;
+}
+
+span.switcher:hover {
+    cursor: pointer;
+}
+
+.switcher {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+.rainbow {
+    background: var(--gradient);
+    animation: rainbow 5s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-reduced-motion) {
+    .rainbow {
+        animation: none !important;
+    }
+}
+
+@keyframes rainbow { 
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(-360deg); }
+}
+
+:root {
+    --family-primary: "Roboto Mono", monospace !important;
+    --family-secondary: var(--family-primary) !important;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    scrollbar-color: var(--dark-scrollbar-thumb) var(--dark-scrollbar-track);
+}
+
+.subheading {
+    font-size: 1.2rem !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+#nav > header > div.mr-6 > h3 > a > span > a {
+    border: none !important;
+}
+
+.about, .home, .subheading {
+    color: var(--dark-text);
+}
+
+#nav a, .heading {
+    color: var(--dark-heading);
+}
+
+#nav a.router-link-exact-active, .frame {
+    border: 1.5px solid var(--dark-border);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--dark-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-scrollbar-thumb);
+}
+/* purgecss end ignore */
