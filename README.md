@@ -1,6 +1,7 @@
 # my website
 
 made it for my knowledge, I'm happy about it
+made it using Vite, Vue 3 and Tailwind
 
 # if you plan to use it
 
