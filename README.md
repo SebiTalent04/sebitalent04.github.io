@@ -13,8 +13,10 @@ made it using Vite, Vue 3 and Tailwind
 `npm run build` - minifies and builds for production
 
 
-kudos to [tilda](https://github.com/tilda)
-
 # license
 
 MIT
+
+#
+
+kudos to [tilda](https://github.com/tilda)
