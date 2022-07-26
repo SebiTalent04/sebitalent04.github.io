@@ -9,13 +9,8 @@ import 'roboto-mono-webfont'
 import 'a17t'
 //
 import Unicon from 'vue-unicons'
-import { uniSun, uniMoon, uniBars, uniMultiply, uniCheckCircleMonochrome } from 'vue-unicons/dist/icons'
+import { uniSun, uniMoon, uniBars, uniMultiply, uniCheckCircleMonochrome, uniGithub } from 'vue-unicons/dist/icons'
 
-Unicon.add([uniSun, uniMoon, uniBars, uniMultiply, uniCheckCircleMonochrome])
+Unicon.add([uniSun, uniMoon, uniBars, uniMultiply, uniCheckCircleMonochrome, uniGithub])
 
-createApp(App)
-    .component('heading', Heading)
-    .component('subheading', Subheading)
-    .use(router)
-    .use(Unicon)
-    .mount('#app')
+createApp(App).component('heading', Heading).component('subheading', Subheading).use(router).use(Unicon).mount('#app')

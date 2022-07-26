@@ -10,12 +10,12 @@
                     <Card href="https://github.com/SebiTalent04">
                         <subheading class="font-bold">​ GitHub Repos ​</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <heading v-else>{{ repos }}</heading>
+                        <heading v-else>​ {{ repos }} ​</heading>
                     </Card>
                     <Card href="https://last.fm/user/SebiTalent04">
                         <subheading class="font-bold">​ Most Played Track ​</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else>"{{ topTrack.name }}" <br />by {{ topTrack.artist }}</subheading>
+                        <subheading v-else>​ "{{ topTrack.name }}" ​<br />​ by {{ topTrack.artist }} ​</subheading>
                     </Card>
                     <Card href="https://last.fm/user/SebiTalent04">
                         <subheading class="font-bold" v-if="!populated">​ Last Played Track ​</subheading>
@@ -24,7 +24,9 @@
                         >
                         <subheading class="font-bold" v-else>​ Last Played Track ​</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else>"{{ recentTrack.name }}" <br />by {{ recentTrack.artist }}</subheading>
+                        <subheading v-else
+                            >​ "{{ recentTrack.name }}" ​ <br />​ by {{ recentTrack.artist }} ​</subheading
+                        >
                     </Card>
                     <Card href="https://github.com/SebiTalent04/sebitalent04.github.io">
                         <subheading class="font-bold">​ Latest Commit ​</subheading>

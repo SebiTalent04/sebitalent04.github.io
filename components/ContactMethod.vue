@@ -19,7 +19,7 @@
 </style>
 
 <script>
-import sicons from 'simple-icons'
+import icons from 'simple-icons'
 
 export default {
     props: {
@@ -30,7 +30,7 @@ export default {
     },
     data() {
         return {
-            icon: sicons.Get(this.method.icon)
+            icon: icons.Get(this.method.icon)
         }
     }
 }
